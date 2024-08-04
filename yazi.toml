@@ -70,7 +70,9 @@ reveal = [
 ]
 
 extract = [
+  # { run = 'ouch decompress "$1"', desc = "Extract here(ouch)", for = "unix" },
   { run = 'unar "$1"', desc = "Extract here", for = "unix" },
+  # { run = '7z x "$1"', desc = "Extract here(7z)", for = "unix" },
   { run = 'unar "%1"', desc = "Extract here", for = "windows" },
 ]
 
@@ -201,6 +203,7 @@ fetchers = [
 
 preloaders = [
   # Image
+  { mime = "image/vnd.djvu", run = "noop" },
   { mime = "image/{avif,heic,jxl,svg+xml}", run = "magick" },
   { mime = "image/*", run = "image" },
   # Video
@@ -220,6 +223,7 @@ previewers = [
   # JSON
   { mime = "application/{json,x-ndjson}", run = "json" },
   # Image
+  { mime = "image/vnd.djvu", run = "noop" },
   { mime = "image/{avif,heic,jxl,svg+xml}", run = "magick" },
   { mime = "image/*", run = "image" },
   # Video
