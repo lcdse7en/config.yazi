@@ -10,9 +10,8 @@ prepend_keymap = [
     "S",
   ], run = '''shell "$SHELL" --block --confirm''', desc = "Open shell here" },
   { on = [
-    "c",
-    "a",
-  ], run = "plugin compress", desc = "Archive selected files" },
+    "C",
+  ], run = "plugin compress", desc = "Compress selected files" },
   { on = [ "c", "m" ], run  = "plugin chmod", desc = "Chmod on selected files" },
   { on = "<C-u>", run = "seek -5", desc = "Seek up 5 units in the preview" },
   { on = "<C-d>", run = "seek 5", desc = "Seek down 5 units in the preview" },
