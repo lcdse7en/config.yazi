@@ -6,6 +6,7 @@ deps = [
   { use = "imsi32/yatline-githead", commit = "2f2b000" },
   { use = "yazi-rs/plugins#smart-filter", commit = "ba2a7d7" },
   { use = "yazi-rs/plugins#hide-preview", commit = "ba2a7d7" },
+  { use = "yazi-rs/plugins#chmod", commit = "a882e38" },
 ]
 
 [flavor]
