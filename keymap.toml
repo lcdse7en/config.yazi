@@ -81,11 +81,6 @@ append_keymap = [
   { on = [
     "g",
     "f",
-    "n",
-  ], run = "cd ~/.config/nvim/", desc = "Go to the nvim directory" },
-  { on = [
-    "g",
-    "f",
     "c",
   ], run = "cd ~/.config", desc = "Go to the config directory" },
   { on = [
@@ -93,6 +88,16 @@ append_keymap = [
     "f",
     "g",
   ], run = "cd ~/github_upload", desc = "Go to the github_upload directory" },
+  { on = [
+    "g",
+    "f",
+    "l",
+  ], run = "cd ~/.local", desc = "Go to the .local directory" },
+  { on = [
+    "g",
+    "f",
+    "n",
+  ], run = "cd ~/.config/nvim/", desc = "Go to the nvim directory" },
   { on = [
     "g",
     "f",
