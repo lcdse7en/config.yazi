@@ -36,6 +36,7 @@ require("zoxide"):setup({
 	update_db = true,
 })
 
+
 require("session"):setup({
 	sync_yanked = true,
 })
@@ -178,4 +179,20 @@ require("yatline-githead"):setup({
 	staged_color = catppuccin_palette.green,
 	unstaged_color = catppuccin_palette.yellow,
 	untracked_color = catppuccin_palette.pink,
+})
+
+
+require("bookmarks"):setup({
+	persist = "all",
+	desc_format = "full",
+	last_directory = { enable = true, persist = true },
+	notify = {
+		enable = true,
+		timeout = 1,
+		message = {
+			new = "New bookmark '<key>' -> '<folder>'",
+			delete = "Deleted bookmark in '<key>'",
+			delete_all = "Deleted all bookmarks",
+		},
+	},
 })

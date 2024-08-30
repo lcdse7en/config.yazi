@@ -2,3 +2,7 @@
 
 [flavor]
 use = "catppuccin-macchiato"
+# use = "tokyo-night"
+
+[which]
+cols = 3

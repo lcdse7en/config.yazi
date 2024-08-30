@@ -8,7 +8,9 @@ deps = [
   { use = "yazi-rs/plugins#hide-preview", commit = "b659791" },
   { use = "yazi-rs/plugins#chmod", commit = "a882e38" },
   { use = "yazi-rs/plugins#lsar", commit = "b659791" },
+  { use = "dedukun/bookmarks", commit = "748efed" },
 ]
 
 [flavor]
-deps = []
+# deps = []
+deps = [{ use = "BennyOe/tokyo-night", commit = "024fb09" }]
