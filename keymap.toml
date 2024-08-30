@@ -10,6 +10,9 @@ prepend_keymap = [
     "S",
   ], run = '''shell "$SHELL" --block --confirm''', desc = "Open shell here" },
   { on = [
+    "f",
+  ], run = "plugin searchjump", desc = "searchjump mode" },
+  { on = [
     "C",
   ], run = "plugin compress", desc = "Compress selected files" },
   { on = [ "g", "g" ], run  = "arrow -99999999", desc = "Move cursor to the top" },
@@ -21,30 +24,27 @@ prepend_keymap = [
   { on = "J", run = "arrow 50%", desc = "Move cursor down half page" },
   { on = "<A-k>", run = "arrow -5", desc = "Move cursor up half page" },
   { on = "<A-j>", run = "arrow 5", desc = "Move cursor down half page" },
-  { on = [
-    "f",
-    "g",
-  ], run = "plugin fg", desc = "find file by content (fuzzy match)" },
-  { on = [
-    "f",
-    "G",
-  ], run = "plugin fg --args='rg'", desc = "find file by content (ripgrep match)" },
-  { on = [
-    "f",
-    "n",
-  ], run = "plugin fg --args='fzf'", desc = "find file by filename" },
-  { on = [
-    "f",
-    "f",
-  ], run = "filter --smart", desc = "Filter files" },
-  { on = [
-    "f",
-    "F",
-  ], run = "plugin smart-filter", desc = "Smart Filter" },
-  { on = [
-    "s",
-  ], run = "plugin searchjump", desc = "searchjump mode" },
-  { on = "S", run = "search fd", desc = "Search files by name using fd" },
+  # { on = [
+  #   "f",
+  #   "g",
+  # ], run = "plugin fg", desc = "find file by content (fuzzy match)" },
+  # { on = [
+  #   "f",
+  #   "G",
+  # ], run = "plugin fg --args='rg'", desc = "find file by content (ripgrep match)" },
+  # { on = [
+  #   "f",
+  #   "n",
+  # ], run = "plugin fg --args='fzf'", desc = "find file by filename" },
+  # { on = [
+  #   "f",
+  #   "f",
+  # ], run = "filter --smart", desc = "Filter files" },
+  # { on = [
+  #   "f",
+  #   "F",
+  # ], run = "plugin smart-filter", desc = "Smart Filter" },
+  # { on = "S", run = "search fd", desc = "Search files by name using fd" },
   { on = [
     "T",
   ], run = "plugin --sync hide-preview", desc = "Hide or show the preview" },
@@ -70,10 +70,12 @@ append_keymap = [
   ], run = "cd ~/Videos/", desc = "Go to the videos directory" },
   { on = [
     "g",
-    "i",
+    "f",
+    "p",
   ], run = "cd ~/Pictures/", desc = "Go to the images directory" },
   { on = [
     "g",
+    "f",
     "s",
   ], run = "cd ~/Pictures/Screenshots/", desc = "Go to the screenshots directory" },
   { on = [
