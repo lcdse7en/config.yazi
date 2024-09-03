@@ -74,6 +74,10 @@ append_keymap = [
   ], run = "cd /", desc = "Go to the / directory" },
   { on = [
     "g",
+    "d",
+  ], run = "cd ~/Downloads/", desc = "Go to the Downloads directory" },
+  { on = [
+    "g",
     "v",
   ], run = "cd ~/Videos/", desc = "Go to the videos directory" },
   { on = [
