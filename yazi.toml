@@ -1,5 +1,6 @@
 [manager]
-layout = [1, 4, 3]
+# layout = [1, 4, 3]
+ratio = [1, 3, 4]
 # sort_by = "natural"
 # sort_by = "modified"
 sort_by = "alphabetical"
@@ -10,7 +11,7 @@ linemode = "size"
 show_hidden = false
 show_symlink = false
 scrolloff = 5
-mouse_events = ["click", "scroll"]
+mouse_events = ["click", "scroll", "touch", "move", "drag"]
 
 
 [preview]

@@ -196,3 +196,7 @@ require("bookmarks"):setup({
 		},
 	},
 })
+
+
+require("starship"):setup()
+require("git"):setup({})
