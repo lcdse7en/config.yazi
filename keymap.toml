@@ -103,7 +103,7 @@ append_keymap = [
     "g",
     "f",
     "g",
-  ], run = "cd ~/github_upload", desc = "Go to the github_upload directory" },
+  ], run = "cd ~/Clone", desc = "Go to the Clone directory" },
   { on = [
     "g",
     "f",
@@ -114,6 +114,11 @@ append_keymap = [
     "f",
     "n",
   ], run = "cd ~/.config/nvim/", desc = "Go to the nvim directory" },
+  { on = [
+    "g",
+    "f",
+    "t",
+  ], run = "cd ~/Clone/typst-book-template/", desc = "Go to the typst_book_template directory" },
   { on = [
     "g",
     "f",
