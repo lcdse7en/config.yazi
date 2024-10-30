@@ -137,6 +137,11 @@ append_keymap = [
     "f",
     "h",
   ], run = "cd ~/.config/hypr", desc = "Go to the hypr directory" },
+  { on = [
+    "g",
+    "f",
+    "z",
+  ], run = "cd ~/.config/zed", desc = "Go to the zed directory" },
 ]
 
 [input]
