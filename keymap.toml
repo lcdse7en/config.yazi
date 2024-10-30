@@ -7,13 +7,16 @@ prepend_keymap = [
     "l",
   ], run = "plugin --sync smart-enter", desc = "Enter the child directory, or open the file" },
   { on = [
+    "r",
+  ], run = "rename --cursor=before_ext", desc = "Rename selected files" },
+  { on = [
     "S",
   ], run = '''shell "$SHELL" --block --confirm''', desc = "Open shell here" },
   { on = [
     "f",
   ], run = "plugin searchjump", desc = "searchjump mode" },
   { on = [
-    "C",
+    "c", "a"
   ], run = "plugin compress", desc = "Compress selected files" },
   { on = [ "g", "g" ], run  = "arrow -99999999", desc = "Move cursor to the top" },
   { on = [ "G" ], run  = "arrow 99999999", desc = "Move cursor to the bottom" },
