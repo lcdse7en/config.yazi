@@ -125,6 +125,11 @@ append_keymap = [
   { on = [
     "g",
     "f",
+    "v",
+  ], run = "cd ~/Videos/", desc = "Go to the Vedios directory" },
+  { on = [
+    "g",
+    "f",
     "y",
   ], run = "cd ~/.config/yazi/", desc = "Go to the yazi directory" },
   { on = [
