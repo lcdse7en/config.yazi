@@ -1,16 +1,17 @@
 [plugin]
 deps = [
-  { use = "yazi-rs/plugins#full-border", commit = "b659791" },
-  { use = "KKV9/compress", commit = "60b24af" },
-  { use = "imsi32/yatline", commit = "f5a56cb" },
-  { use = "imsi32/yatline-githead", commit = "2f2b000" },
-  { use = "yazi-rs/plugins#smart-filter", commit = "b659791" },
-  { use = "yazi-rs/plugins#hide-preview", commit = "b659791" },
-  { use = "yazi-rs/plugins#chmod", commit = "a882e38" },
-  { use = "yazi-rs/plugins#lsar", commit = "b659791" },
-  { use = "dedukun/bookmarks", commit = "748efed" },
+  { use = "yazi-rs/plugins:full-border", rev = "ad52adf" },
+  { use = "KKV9/compress", rev = "60b24af" },
+  { use = "imsi32/yatline", rev = "7b56434" },
+  { use = "imsi32/yatline-githead", rev = "a6377a8" },
+  { use = "yazi-rs/plugins:smart-filter", rev = "ad52adf" },
+  { use = "yazi-rs/plugins:hide-preview", rev = "ad52adf" },
+  { use = "yazi-rs/plugins:git", rev = "ad52adf" },
+  { use = "yazi-rs/plugins:chmod", rev = "a882e38" },
+  { use = "yazi-rs/plugins:lsar", rev = "b659791" },
+  { use = "dedukun/bookmarks", rev = "748efed" },
 ]
 
 [flavor]
 # deps = []
-deps = [{ use = "BennyOe/tokyo-night", commit = "024fb09" }]
+deps = [{ use = "BennyOe/tokyo-night", rev = "024fb09" }]
