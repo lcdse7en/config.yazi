@@ -4,5 +4,5 @@
 use = "catppuccin-macchiato"
 # use = "tokyo-night"
 
-[which]
-cols = 3
+# [which]
+# cols = 3
