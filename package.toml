@@ -1,6 +1,6 @@
 [plugin]
 deps = [
-  # ya pack -u | -l | -i
+  #  NOTE:  ya pack -u | -l | -i
   { use = "yazi-rs/plugins:full-border", rev = "ad52adf" },
   { use = "KKV9/compress", rev = "60b24af" },
   { use = "imsi32/yatline", rev = "7b56434" },
