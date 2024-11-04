@@ -120,6 +120,11 @@ append_keymap = [
   { on = [
     "g",
     "f",
+    "m",
+  ], run = "cd ~/Music/", desc = "Go to the Music directory" },
+  { on = [
+    "g",
+    "f",
     "t",
   ], run = "cd ~/Clone/typst-book-template/", desc = "Go to the typst_book_template directory" },
   { on = [

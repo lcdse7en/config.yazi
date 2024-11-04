@@ -12,6 +12,14 @@ deps = [
   { use = "yazi-rs/plugins:chmod", rev = "a882e38" },
   { use = "yazi-rs/plugins:lsar", rev = "b659791" },
   { use = "dedukun/bookmarks", rev = "748efed" },
+  { use = "Tyarel8/video-ffmpeg", rev = "fe26a18" },
+  #Add
+  { use = "ndtoan96/ouch", rev = "251da69" },
+  { use = "AnirudhG07/rich-preview", rev = "fe43219" },
+  { use = "Reledia/glow", rev = "d8b36ff" },
+  { use = "kirasok/torrent-preview", rev = "76970b6" },
+  { use = "Sonico98/exifaudio", rev = "6205460" },
+  { use = "AnirudhG07/rich-preview", rev = "fe43219" },
 ]
 
 [flavor]
