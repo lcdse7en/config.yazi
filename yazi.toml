@@ -165,7 +165,10 @@ prepend_previewers = [
   { mime = "video/*", run = "video" },
   { mime = "audio/*", run = "exifaudio" },
   # { mime = "video/*", run = "ffmpegthumbnailer" },
+  # Torrent
   { mime = "application/x-bittorrent", run = "torrent-preview" },
+  # python
+  { name = "*.ipynb", run = "nbpreview" },
 ]
 
 fetchers = [
@@ -180,7 +183,6 @@ preloaders = [
   { mime = "image/*", run = "image" },
   # Video
   { mime = "video/*", run = "video" },
-  # { mime = "video/*", run = "ffmpegthumbnailer" },
   # PDF
   { mime = "application/pdf", run = "pdf" },
   # Font
@@ -202,7 +204,6 @@ previewers = [
   { mime = "image/*", run = "image" },
   # Video
   { mime = "video/*", run = "video" },
-  # { mime = "video/*", run = "ffmpegthumbnailer" },
   # PDF
   { mime = "application/pdf", run = "pdf" },
   # Archive
