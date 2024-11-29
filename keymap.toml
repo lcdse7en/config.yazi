@@ -111,6 +111,11 @@ append_keymap = [
     "g",
     "f",
     "l",
+  ], run = "cd ~/.config/lf", desc = "Go to the lf directory" },
+  { on = [
+    "g",
+    "f",
+    "L",
   ], run = "cd ~/.local", desc = "Go to the .local directory" },
   { on = [
     "g",
