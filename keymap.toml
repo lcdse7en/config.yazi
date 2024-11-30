@@ -105,6 +105,11 @@ append_keymap = [
   { on = [
     "g",
     "f",
+    "f",
+  ], run = "cd ~/.config/fish", desc = "Go to the fish directory" },
+  { on = [
+    "g",
+    "f",
     "g",
   ], run = "cd ~/Clone", desc = "Go to the Clone directory" },
   { on = [
