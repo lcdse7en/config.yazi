@@ -86,6 +86,11 @@ append_keymap = [
   { on = [
     "g",
     "f",
+    "a",
+  ], run = "cd ~/Clone/accountant", desc = "Go to the accountant directory" },
+  { on = [
+    "g",
+    "f",
     "p",
   ], run = "cd ~/Pictures/", desc = "Go to the images directory" },
   { on = [
