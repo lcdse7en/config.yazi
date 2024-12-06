@@ -1,8 +1,5 @@
 "$schema" = "https://yazi-rs.github.io/schemas/theme.json"
 
 [flavor]
-use = "catppuccin-macchiato"
-# use = "tokyo-night"
-
-# [which]
-# cols = 3
+use = "catppuccin-mocha"
+dark = "catppuccin-mocha"
