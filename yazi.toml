@@ -120,6 +120,8 @@ rules = [
     "extract",
     # "reveal",
   ] },
+  # use nvim open srt file
+  { mime = "application/x-subrip", use = ["edit", "reveal"] },
   { mime = "application/json", use = ["edit", "reveal"] },
   { mime = "*/javascript", use = ["edit", "reveal"] },
   { mime = "inode/x-empty", use = ["edit", "reveal"] },
