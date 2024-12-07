@@ -57,6 +57,16 @@ keymap = [
   { on = [
     "g",
     "f",
+    "g",
+  ], run = "cd ~/Clone", desc = "Go ~/Clone" },
+  { on = [
+    "g",
+    "f",
+    "h",
+  ], run = "cd ~/.config/hypr", desc = "Go hypr" },
+  { on = [
+    "g",
+    "f",
     "n",
   ], run = "cd ~/.config/nvim", desc = "Go nvim" },
   { on = [
