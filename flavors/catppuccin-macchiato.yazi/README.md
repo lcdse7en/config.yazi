@@ -3,7 +3,7 @@
 </div>
 
 <h3 align="center">
-	Catppuccin Mocha Flavor for <a href="https://github.com/sxyazi/yazi">Yazi</a>
+	Catppuccin Macchiato Flavor for <a href="https://github.com/sxyazi/yazi">Yazi</a>
 </h3>
 
 ## 👀 Preview
@@ -13,7 +13,7 @@
 ## 🎨 Installation
 
 ```sh
-ya pack -a yazi-rs/flavors:catppuccin-mocha
+ya pack -a yazi-rs/flavors:catppuccin-macchiato
 ```
 
 ## ⚙️ Usage
@@ -22,9 +22,9 @@ Set the content of your `theme.toml` to enable it as your _dark_ flavor:
 
 ```toml
 [flavor]
-use = "catppuccin-mocha"
+use = "catppuccin-macchiato"
 # For upcoming Yazi 0.4 (nightly version):
-dark = "catppuccin-mocha"
+dark = "catppuccin-macchiato"
 ```
 
 Make sure your `theme.toml` doesn't contain anything other than `[flavor]`, unless you want to override certain styles of this flavor.

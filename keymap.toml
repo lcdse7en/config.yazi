@@ -77,6 +77,11 @@ keymap = [
   { on = [
     "g",
     "f",
+    "w",
+  ], run = "cd ~/.config/wezterm", desc = "Go wezterm" },
+  { on = [
+    "g",
+    "f",
     "y",
   ], run = "cd ~/.config/yazi", desc = "Go yazi" },
 
