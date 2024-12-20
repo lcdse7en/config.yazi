@@ -547,7 +547,35 @@ on = ["<F5>"]
 run = "refresh"
 desc = "Refresh the current directory"
 
-## SHell Opener
+## Search jump
+[[manager.prepend_keymap]]
+on = ["s"]
+run = "plugin searchjump"
+desc = "searchjump mode"
+
+## Easyjump
+[[manager.prepend_keymap]]
+on = ["i"]
+run = "plugin easyjump"
+desc = "easyjump"
+
+[[manager.prepend_keymap]]
+on   = "l"
+run  = "plugin smart-enter"
+desc = "Enter the child directory, or open the file"
+
+[[manager.prepend_keymap]]
+on   = ["C"]
+run  = "plugin compress"
+desc = "Archive selected files"
+
+## Toggle preview
+[[manager.prepend_keymap]]
+on = ["T"]
+run = "plugin hide-preview"
+desc = "Hide or show the preview"
+
+## Shell Opener
 [[manager.prepend_keymap]]
 on = ["S"]
 run = 'shell "$SHELL" --block --confirm'
@@ -572,7 +600,3 @@ on = ["c", "p"]
 run = "plugin command"
 desc = "Yazi command prompt"
 
-[[manager.prepend_keymap]]
-on = ["i"]
-run = "plugin easyjump"
-desc = "easyjump"
