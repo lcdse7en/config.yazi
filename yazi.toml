@@ -159,7 +159,8 @@ previewers = [
   { mime = "application/subrip", run = "code" },
   # Archive
   { mime = "application/{,g}zip", run = "archive" },
-  { mime = "application/{tar,bzip*,7z*,xz,rar,iso9660-image}", run = "archive" },
+  { mime = "application/{tar,bzip*,7z*,xz,rar,iso9660-image,lzma,compress,cpio,arj,xar,ms-cab*}", run = "archive" },
+  { name = "application/*.{img,fat,ext,ext2,ext3,ext4,squashfs,ntfs,hfs,hfsx}", run = "archive" },
   # Font
   { mime = "font/*", run = "font" },
   { mime = "application/ms-opentype", run = "font" },
