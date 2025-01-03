@@ -82,6 +82,11 @@ keymap = [
   { on = [
     "g",
     "f",
+    "t",
+  ], run = "cd ~/.config/ghostty/", desc = "Go ghostty" },
+  { on = [
+    "g",
+    "f",
     "w",
   ], run = "cd ~/.config/wezterm", desc = "Go wezterm" },
   { on = [
