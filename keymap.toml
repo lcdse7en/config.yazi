@@ -579,11 +579,53 @@ on   = ["C"]
 run  = "plugin compress"
 desc = "Archive selected files"
 
-## Toggle preview
+# Previews
 [[manager.prepend_keymap]]
 on = ["T"]
 run = "plugin hide-preview"
 desc = "Hide or show the preview"
+
+[[manager.prepend_keymap]]
+on = ["M"]
+run = "plugin max-preview"
+desc = "Maximize or restore preview"
+
+# Bookmarks
+[[manager.prepend_keymap]]
+on = ["m"]
+run = "plugin bookmarks save"
+desc = "Save current position as a bookmark"
+
+[[manager.prepend_keymap]]
+on = ["'"]
+run = "plugin bookmarks jump"
+desc = "Jump to a bookmark"
+
+[[manager.prepend_keymap]]
+on = ["b", "d"]
+run = "plugin bookmarks delete"
+desc = "Delete a bookmark"
+
+[[manager.prepend_keymap]]
+on = ["b", "D"]
+run = "plugin bookmarks delete_all"
+desc = "Delete all bookmark"
+
+# What size
+[[manager.prepend_keymap]]
+on = [".", "s"]
+run = "plugin what-size"
+desc = "Calc size of selection or cwd"
+
+[[manager.prepend_keymap]]
+on = [".", "S"]
+run = "plugin what-size --args='--clipboard'"
+desc = "Calc size of selection or cwd"
+
+# Mount
+[[manager.prepend_keymap]]
+on  = "E"
+run = "plugin mount"
 
 ## Shell Opener
 [[manager.prepend_keymap]]
