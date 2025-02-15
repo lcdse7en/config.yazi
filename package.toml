@@ -107,3 +107,8 @@ hash = ""
 use = "BennyOe/tokyo-night"
 rev = "9e6f899"
 hash = "2338a26b44318e22e649df342226b759"
+
+[[flavor.deps]]
+use = "kalidyasin/yazi-flavors:tokyonight-night"
+rev = "92a09a6"
+hash = "845c5ee33e147b1a57f48728e42600ee"

@@ -3,5 +3,5 @@
 [flavor]
 # use = "catppuccin-macchiato"
 # dark = "catppuccin-macchiato"
-use = "tokyo-night"
-dark = "tokyo-night"
+dark = "tokyonight-night"
+light = "tokyonight-night"
