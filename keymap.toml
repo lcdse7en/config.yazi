@@ -592,7 +592,7 @@ desc = "Maximize or restore preview"
 
 # Bookmarks
 [[manager.prepend_keymap]]
-on = ["m"]
+on = ["B"]
 run = "plugin bookmarks save"
 desc = "Save current position as a bookmark"
 
