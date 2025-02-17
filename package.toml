@@ -83,6 +83,21 @@ use = "yazi-rs/plugins:mount"
 rev = "beb586a"
 hash = "5c4d8080367dd2561a18c1cf5a1dd295"
 
+[[plugin.deps]]
+use = "MasouShizuka/projects"
+rev = "ac57d0a"
+hash = "9f45b6c6a55d9992ad80091ab8112c24"
+
+[[plugin.deps]]
+use = "GianniBYoung/rsync"
+rev = "3f431aa"
+hash = "1854a5a30d23e84bc8df24700f27957b"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:jump-to-char"
+rev = "beb586a"
+hash = "af11685de39c366ec1137fcbccacdbff"
+
 [[flavor.deps]]
 use = "tkapias/moonfly"
 rev = "395c686"
@@ -112,13 +127,3 @@ hash = "2338a26b44318e22e649df342226b759"
 use = "kalidyasin/yazi-flavors:tokyonight-night"
 rev = "92a09a6"
 hash = "845c5ee33e147b1a57f48728e42600ee"
-
-[[plugin.deps]]
-use = "MasouShizuka/projects"
-rev = "ac57d0a"
-hash = "9f45b6c6a55d9992ad80091ab8112c24"
-
-[[plugin.deps]]
-use = "GianniBYoung/rsync"
-rev = "3f431aa"
-hash = "1854a5a30d23e84bc8df24700f27957b"
