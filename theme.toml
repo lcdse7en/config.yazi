@@ -3,5 +3,9 @@
 [flavor]
 # use = "catppuccin-macchiato"
 # dark = "catppuccin-macchiato"
-dark = "tokyonight-night"
-light = "tokyonight-night"
+# dark = "tokyonight-night"
+# light = "tokyonight-night"
+
+# ya pack -a mukhlisakbr/solarized-osaka
+dark = "solarized-osaka"
+light = "solarized-osaka"

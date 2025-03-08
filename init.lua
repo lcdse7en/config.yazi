@@ -84,6 +84,45 @@ require('restore'):setup {
   },
 }
 
+require('mime-ext'):setup { -- Expand the existing filename database (lowercase), for example:
+  fallback_file1 = true,
+}
+
+require('projects'):setup {
+  save = {
+    method = 'yazi', -- yazi | lua
+    lua_save_path = '~/.config/yazi/state/projects.json', -- windows: "%APPDATA%/yazi/state/projects.json", unix: "~/.config/yazi/state/projects.json"
+  },
+  last = {
+    update_after_save = true,
+    update_after_load = true,
+    load_after_start = true,
+  },
+  merge = {
+    quit_after_merge = true,
+  },
+  notify = {
+    enable = true,
+    title = 'Projects',
+    timeout = 3,
+    level = 'info',
+  },
+}
+
+require('yamb'):setup {
+  -- Optional, the path ending with path seperator represents folder.
+  bookmarks = bookmarks,
+  -- Optional, recieve notification everytime you jump.
+  jump_notify = false,
+  -- Optional, the cli of fzf.
+  cli = 'fzf',
+  -- Optional, a string used for randomly generating keys, where the preceding characters have higher priority.
+  keys = 'abcdefghijklmnopqrstuvwxyz',
+  -- Optional, the path of bookmarks
+  path = (ya.target_family() == 'windows' and os.getenv 'APPDATA' .. '\\yazi\\config\\bookmark')
+    or (os.getenv 'HOME' .. '/.config/yazi/bookmark'),
+}
+
 require('yatline'):setup {
   section_separator = { open = '', close = '' },
   inverse_separator = { open = '', close = '' },

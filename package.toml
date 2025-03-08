@@ -4,6 +4,11 @@ rev = "beb586a"
 hash = "ae9e1d0c6bfd68cdebc98cc684c22b45"
 
 [[plugin.deps]]
+use = "qsdrqs/searchjump"
+rev = "489b0db"
+hash = "4715e3eb8925e6b178f27c66407f5feb"
+
+[[plugin.deps]]
 use = "KKV9/compress"
 rev = "60b24af"
 hash = "ee025be766240cc98e671754ac836da3"
@@ -98,6 +103,26 @@ use = "yazi-rs/plugins:jump-to-char"
 rev = "beb586a"
 hash = "af11685de39c366ec1137fcbccacdbff"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:mime-ext"
+rev = "8945e54"
+hash = "b03f3d80d26b6d7bb490b1380e9cb754"
+
+[[plugin.deps]]
+use = "MasouShizuka/projects"
+rev = "ac57d0a"
+hash = "9f45b6c6a55d9992ad80091ab8112c24"
+
+[[plugin.deps]]
+use = "boydaihungst/torrent-preview"
+rev = "f9e1645"
+hash = "8cee06cf4572d18f03246eaf526b418"
+
+[[plugin.deps]]
+use = "h-hg/yamb"
+rev = "3f7c51f"
+hash = "e11b980e5635f0fbabd80931b1a1347e"
+
 [[flavor.deps]]
 use = "tkapias/moonfly"
 rev = "395c686"
@@ -129,6 +154,6 @@ rev = "92a09a6"
 hash = "845c5ee33e147b1a57f48728e42600ee"
 
 [[flavor.deps]]
-use = "qsdrqs/searchjump"
-rev = "489b0db"
-hash = "4715e3eb8925e6b178f27c66407f5feb"
+use = "mukhlisakbr/solarized-osaka"
+rev = "439b674"
+hash = "63e5b4a4d4fb6dca3a93a441232a95e4"
