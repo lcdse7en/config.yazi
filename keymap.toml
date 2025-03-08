@@ -591,6 +591,11 @@ on   = ["C"]
 run  = "plugin compress"
 desc = "Archive selected files"
 
+[[manager.prepend_keymap]]
+on   = ["E"]
+run  = 'shell "ya pub extract --list \"$@\""'
+desc = "Extract file(s)"
+
 # Previews
 [[manager.prepend_keymap]]
 on = ["T"]
@@ -605,22 +610,37 @@ desc = "Maximize or restore preview"
 # Bookmarks
 [[manager.prepend_keymap]]
 on = ["B"]
-run = "plugin bookmarks save"
-desc = "Save current position as a bookmark"
+run = "plugin yamb -- save"
+desc = "Add bookmark"
 
 [[manager.prepend_keymap]]
 on = ["'"]
-run = "plugin bookmarks jump"
-desc = "Jump to a bookmark"
+run = "plugin yamb -- jump_by_key"
+desc = "Jump bookmark by key"
 
 [[manager.prepend_keymap]]
 on = ["b", "d"]
-run = "plugin bookmarks delete"
-desc = "Delete a bookmark"
+run = "plugin yamb -- delete_by_key"
+desc = "Delete bookmark by key"
+
+[[manager.prepend_keymap]]
+on = ["b", "f"]
+run = "plugin yamb -- delete_by_fzf"
+desc = "Delete bookmark by fzf"
+
+[[manager.prepend_keymap]]
+on = ["b", "r"]
+run = "plugin yamb -- rename_by_key"
+desc = "Rename bookmark by key"
+
+[[manager.prepend_keymap]]
+on = ["b", "R"]
+run = "plugin yamb -- rename_by_fzf"
+desc = "Rename bookmark by fzf"
 
 [[manager.prepend_keymap]]
 on = ["b", "D"]
-run = "plugin bookmarks delete_all"
+run = "plugin yamb -- delete_all"
 desc = "Delete all bookmark"
 
 [[manager.prepend_keymap]]
