@@ -141,6 +141,11 @@ preloaders = [
   { mime = "font/*", run = "font" },
   { mime = "application/ms-opentype", run = "font" },
 ]
+
+prepend_previewers= [
+  { name = "application/bittorrent", run = "torrent-preview" },
+]
+
 previewers = [
   { name = "*/", run = "folder", sync = true },
   # Code
