@@ -50,7 +50,7 @@ keymap = [
     "g",
     "f",
     "a",
-  ], run = "cd ~/Clone/accountant", desc = "Go accountant" },
+  ], run = "cd ~/.local/share/typst/packages/local", desc = "Go typst local se7en template" },
   { on = [
     "g",
     "f",
