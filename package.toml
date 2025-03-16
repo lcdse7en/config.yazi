@@ -139,11 +139,6 @@ rev = "181acd4"
 hash = ""
 
 [[flavor.deps]]
-use = "yazi-rs/flavors:catppuccin-mocha"
-rev = "8458d25"
-hash = ""
-
-[[flavor.deps]]
 use = "BennyOe/tokyo-night"
 rev = "9e6f899"
 hash = "2338a26b44318e22e649df342226b759"
@@ -157,3 +152,13 @@ hash = "845c5ee33e147b1a57f48728e42600ee"
 use = "mukhlisakbr/solarized-osaka"
 rev = "439b674"
 hash = "63e5b4a4d4fb6dca3a93a441232a95e4"
+
+[[flavor.deps]]
+use = "kmlupreti/ayu-dark"
+rev = "5412a78"
+hash = "60690920e8c0f9f81ff02009de5d156f"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-mocha"
+rev = "68326b4"
+hash = "2ac87e1b3a61f5887472899e86535d29"

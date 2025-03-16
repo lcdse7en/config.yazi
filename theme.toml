@@ -6,6 +6,11 @@
 # dark = "tokyonight-night"
 # light = "tokyonight-night"
 
+use = "catppuccin-mocha"
+dark = "catppuccin-mocha"
+
+# dark = "ayu-dark"
+
 # ya pack -a mukhlisakbr/solarized-osaka
-dark = "solarized-osaka"
-light = "solarized-osaka"
+# dark = "solarized-osaka"
+# light = "solarized-osaka"

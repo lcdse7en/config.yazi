@@ -3,7 +3,7 @@
 </div>
 
 <h3 align="center">
-	Catppuccin Mocha Flavor for <a href="https://github.com/sxyazi/yazi">Yazi</a>
+	Ayu Dark Flavor for <a href="https://github.com/sxyazi/yazi">Yazi</a>
 </h3>
 
 ## 👀 Preview
@@ -12,22 +12,18 @@
 
 ## 🎨 Installation
 
-```sh
-ya pack -a yazi-rs/flavors:catppuccin-mocha
+```bash
+ya pack -a kmlupreti/ayu-dark
 ```
 
 ## ⚙️ Usage
 
-Set the content of your `theme.toml` to enable it as your _dark_ flavor:
+Add the these lines to your `theme.toml` configuration file to use it:
 
 ```toml
 [flavor]
-dark = "catppuccin-mocha"
+dark = "ayu-dark"
 ```
-
-Make sure your `theme.toml` doesn't contain anything other than `[flavor]`, unless you want to override certain styles of this flavor.
-
-See the [Yazi flavor documentation](https://yazi-rs.github.io/docs/flavors/overview) for more details.
 
 ## 📜 License
 
