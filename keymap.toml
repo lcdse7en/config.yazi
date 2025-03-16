@@ -31,15 +31,36 @@ keymap = [
   ], run = "arrow top", desc = "Move cursor to the top" },
   { on = "G", run = "arrow bot", desc = "Move cursor to the bottom" },
 
-	# Tabs Save and Restore
-	{on = [ "P", "s" ], run = "plugin projects save", desc = "Save current project"},
-	{on = [ "P", "l" ], run = "plugin projects load", desc = "Load project"},
-	{on = [ "P", "P" ], run = "plugin projects load_last", desc = "Load last project"},
-	{on = [ "P", "d" ], run = "plugin projects delete", desc = "Delete project"},
-	{on = [ "P", "D" ], run = "plugin projects delete_all", desc = "Delete all projects"},
-	{on = [ "P", "m" ], run = "plugin projects 'merge current'", desc = "Merge current tab to other projects"},
-	{on = [ "P", "M" ], run = "plugin projects 'merge all'", desc = "Merge current project to other projects"},
-	{on = "q", run = "plugin projects quit", desc = "Save last project and exit process"},
+  # Tabs Save and Restore
+  { on = [
+    "P",
+    "s",
+  ], run = "plugin projects save", desc = "Save current project" },
+  { on = [
+    "P",
+    "l",
+  ], run = "plugin projects load", desc = "Load project" },
+  { on = [
+    "P",
+    "P",
+  ], run = "plugin projects load_last", desc = "Load last project" },
+  { on = [
+    "P",
+    "d",
+  ], run = "plugin projects delete", desc = "Delete project" },
+  { on = [
+    "P",
+    "D",
+  ], run = "plugin projects delete_all", desc = "Delete all projects" },
+  { on = [
+    "P",
+    "m",
+  ], run = "plugin projects 'merge current'", desc = "Merge current tab to other projects" },
+  { on = [
+    "P",
+    "M",
+  ], run = "plugin projects 'merge all'", desc = "Merge current project to other projects" },
+  { on = "q", run = "plugin projects quit", desc = "Save last project and exit process" },
 
   #  NOTE: Lcdse7en custom
   { on = [
@@ -146,8 +167,8 @@ keymap = [
   { on = "<Tab>", run = "spot", desc = "Spot hovered file" },
 
   # Operation
-  { on = "o", run = "open", desc = "Open selected files" },
-  { on = "O", run = "open --interactive", desc = "Open selected files interactively" },
+  # { on = "o", run = "open", desc = "Open selected files" },
+  { on = "o", run = "open --interactive", desc = "Open selected files interactively" },
   { on = "<Enter>", run = "open", desc = "Open selected files" },
   { on = "<S-Enter>", run = "open --interactive", desc = "Open selected files interactively" },
   { on = "y", run = "yank", desc = "Yank selected files (copy)" },
@@ -166,7 +187,10 @@ keymap = [
   { on = "u", run = "plugin restore", desc = "Restore last deleted files/folders" },
   { on = ";", run = "shell --interactive", desc = "Run a shell command" },
   { on = ":", run = "shell --block --interactive", desc = "Run a shell command (block until finishes)" },
-  { on = [".", "."], run = "hidden toggle", desc = "Toggle the visibility of hidden files" },
+  { on = [
+    ".",
+    ".",
+  ], run = "hidden toggle", desc = "Toggle the visibility of hidden files" },
   { on = "<C-f>", run = "search --via=fd", desc = "Search files by name via fd" },
   { on = "<C-r>", run = "search --via=rg", desc = "Search files by content via ripgrep" },
   { on = "<C-s>", run = "escape --search", desc = "Cancel the ongoing search" },
@@ -218,7 +242,10 @@ keymap = [
   ], run = "copy name_without_ext", desc = "Copy the filename without extension" },
 
   # Filter
-  { on = ["f", "f"], run = "filter --smart", desc = "Filter files" },
+  { on = [
+    "f",
+    "f",
+  ], run = "filter --smart", desc = "Filter files" },
 
   # Find
   { on = "/", run = "find --smart", desc = "Find next file" },
@@ -582,18 +609,18 @@ run = "plugin easyjump"
 desc = "easyjump"
 
 [[manager.prepend_keymap]]
-on   = "l"
-run  = "plugin smart-enter"
+on = "l"
+run = "plugin smart-enter"
 desc = "Enter the child directory, or open the file"
 
 [[manager.prepend_keymap]]
-on   = ["C"]
-run  = "plugin compress"
+on = ["C"]
+run = "plugin compress"
 desc = "Archive selected files"
 
 [[manager.prepend_keymap]]
-on   = ["E"]
-run  = 'shell "ya pub extract --list \"$@\""'
+on = ["E"]
+run = 'shell "ya pub extract --list \"$@\""'
 desc = "Extract file(s)"
 
 # Previews
@@ -661,7 +688,7 @@ desc = "Calc size of selection or cwd"
 
 # Mount
 [[manager.prepend_keymap]]
-on  = "E"
+on = "E"
 run = "plugin mount"
 
 [[manager.prepend_keymap]]
