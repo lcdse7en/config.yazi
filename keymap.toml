@@ -109,8 +109,18 @@ keymap = [
   { on = [
     "g",
     "f",
+    "l",
+  ], run = "cd ~/.local", desc = "Go ~/.local" },
+  { on = [
+    "g",
+    "f",
     "o",
   ], run = "cd ~/.local/state/nvim/overseer/", desc = "Go overseer bundle jons file" },
+  { on = [
+    "g",
+    "f",
+    "p",
+  ], run = "cd ~/pyprojects", desc = "Go ~/pyprojects" },
   { on = [
     "g",
     "f",
