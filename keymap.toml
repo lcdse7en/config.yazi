@@ -129,6 +129,11 @@ keymap = [
   { on = [
     "g",
     "f",
+    "T",
+  ], run = "cd ~/.local/state/typst/packages", desc = "Go ~/.local/state/typst/packages" },
+  { on = [
+    "g",
+    "f",
     "w",
   ], run = "cd ~/.config/wezterm", desc = "Go wezterm" },
   { on = [
