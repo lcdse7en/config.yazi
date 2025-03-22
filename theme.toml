@@ -6,8 +6,11 @@
 # dark = "tokyonight-night"
 # light = "tokyonight-night"
 
-use = "catppuccin-mocha"
-dark = "catppuccin-mocha"
+# use = "catppuccin-mocha"
+# dark = "catppuccin-mocha"
+
+dark = "flexoki-dark"
+light = "flexoki-light"
 
 # dark = "ayu-dark"
 

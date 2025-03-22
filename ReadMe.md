@@ -22,8 +22,8 @@ ya pack -a kmlupreti/ayu-dark
 dark = "ayu-dark"
 ```
 
-- Misty
+- flexoki
 
 ```bash
-
+ya pack -a gosxrgxx/flexoki-dark
 ```
