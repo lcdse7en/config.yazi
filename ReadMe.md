@@ -26,4 +26,5 @@ dark = "ayu-dark"
 
 ```bash
 ya pack -a gosxrgxx/flexoki-dark
+ya pack -a gosxrgxx/flexoki-light
 ```
