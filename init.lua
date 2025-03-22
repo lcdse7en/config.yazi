@@ -1,36 +1,35 @@
-local catppuccin_palette = {
-  rosewater = '#f4dbd6',
-  flamingo = '#f0c6c6',
-  pink = '#f5bde6',
-  mauve = '#c6a0f6',
-  red = '#ed8796',
-  maroon = '#ee99a0',
-  peach = '#f5a97f',
-  yellow = '#eed49f',
-  green = '#a6da95',
-  teal = '#8bd5ca',
-  sky = '#91d7e3',
-  sapphire = '#7dc4e4',
-  blue = '#8aadf4',
-  lavender = '#b7bdf8',
-  text = '#cad3f5',
-  subtext1 = '#b8c0e0',
-  subtext0 = '#a5adcb',
-  overlay2 = '#939ab7',
-  overlay1 = '#8087a2',
-  overlay0 = '#6e738d',
-  surface2 = '#5b6078',
-  surface1 = '#494d64',
-  surface0 = '#363a4f',
-  base = '#24273a',
-  mantle = '#1e2030',
-  crust = '#181926',
-}
+-- local catppuccin_palette = {
+--   rosewater = '#f4dbd6',
+--   flamingo = '#f0c6c6',
+--   pink = '#f5bde6',
+--   mauve = '#c6a0f6',
+--   red = '#ed8796',
+--   maroon = '#ee99a0',
+--   peach = '#f5a97f',
+--   yellow = '#eed49f',
+--   green = '#a6da95',
+--   teal = '#8bd5ca',
+--   sky = '#91d7e3',
+--   sapphire = '#7dc4e4',
+--   blue = '#8aadf4',
+--   lavender = '#b7bdf8',
+--   text = '#cad3f5',
+--   subtext1 = '#b8c0e0',
+--   subtext0 = '#a5adcb',
+--   overlay2 = '#939ab7',
+--   overlay1 = '#8087a2',
+--   overlay0 = '#6e738d',
+--   surface2 = '#5b6078',
+--   surface1 = '#494d64',
+--   surface0 = '#363a4f',
+--   base = '#24273a',
+--   mantle = '#1e2030',
+--   crust = '#181926',
+-- }
 
--- Plugins
-require('full-border'):setup {
-  type = ui.Border.ROUNDED,
-}
+-- require('full-border'):setup {
+--   type = ui.Border.ROUNDED,
+-- }
 
 require('zoxide'):setup {
   update_db = true,
@@ -51,20 +50,11 @@ require('searchjump'):setup {
 }
 
 require('restore'):setup {
-  -- Set the position for confirm and overwrite dialogs.
-  -- don't forget to set height: `h = xx`
-  -- https://yazi-rs.github.io/docs/plugins/utils/#ya.input
   position = { 'center', w = 70, h = 40 },
-
-  -- Show confirm dialog before restore.
-  -- NOTE: even if set this to false, overwrite dialog still pop up
   show_confirm = true,
-
-  -- colors for confirm and overwrite dialogs
   theme = {
     title = 'blue',
     header = 'green',
-    -- header color for overwrite dialog
     header_warning = 'yellow',
     list_item = { odd = 'blue', even = 'blue' },
   },

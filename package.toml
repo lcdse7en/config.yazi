@@ -134,11 +134,6 @@ rev = "8458d25"
 hash = ""
 
 [[flavor.deps]]
-use = "PinThePenguine/sunset"
-rev = "181acd4"
-hash = ""
-
-[[flavor.deps]]
 use = "BennyOe/tokyo-night"
 rev = "9e6f899"
 hash = "2338a26b44318e22e649df342226b759"
@@ -154,11 +149,6 @@ rev = "439b674"
 hash = "63e5b4a4d4fb6dca3a93a441232a95e4"
 
 [[flavor.deps]]
-use = "kmlupreti/ayu-dark"
-rev = "5412a78"
-hash = "60690920e8c0f9f81ff02009de5d156f"
-
-[[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
 rev = "68326b4"
 hash = "2ac87e1b3a61f5887472899e86535d29"
@@ -172,3 +162,18 @@ hash = "56a96293138f09da7fae25ee405a4393"
 use = "gosxrgxx/flexoki-light"
 rev = "9d53f85"
 hash = "4871da00f8c49c6ad3ba552652539199"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:dracula"
+rev = "68326b4"
+hash = "53e1f10ae0f6abd406e463fceca8622a"
+
+[[flavor.deps]]
+use = "PinThePenguine/sunset"
+rev = "181acd4"
+hash = "cc4c39af7098f02c42fec223fc1fc967"
+
+[[flavor.deps]]
+use = "kmlupreti/ayu-dark"
+rev = "5412a78"
+hash = "60690920e8c0f9f81ff02009de5d156f"

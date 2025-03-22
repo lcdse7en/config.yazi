@@ -9,10 +9,16 @@
 # use = "catppuccin-mocha"
 # dark = "catppuccin-mocha"
 
-dark = "flexoki-dark"
-light = "flexoki-light"
+# dark = "dracula"
 
-# dark = "ayu-dark"
+# use = "sunset"
+# dark = "sunset"
+
+# dark = "flexoki-dark"
+# light = "flexoki-light"
+
+use = "ayu-dark"
+dark = "ayu-dark"
 
 # ya pack -a mukhlisakbr/solarized-osaka
 # dark = "solarized-osaka"
