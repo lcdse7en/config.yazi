@@ -90,7 +90,7 @@ keymap = [
     "g",
     "f",
     "g",
-  ], run = "cd ~/Clone", desc = "Go ~/Clone" },
+  ], run = "cd ~/Clone", desc = "Go ~/github" },
   { on = [
     "g",
     "f",
@@ -121,6 +121,11 @@ keymap = [
     "f",
     "p",
   ], run = "cd ~/pyprojects", desc = "Go ~/pyprojects" },
+  { on = [
+    "g",
+    "f",
+    "P",
+  ], run = "cd ~/PJYTV", desc = "Go ~/PJYTV" },
   { on = [
     "g",
     "f",

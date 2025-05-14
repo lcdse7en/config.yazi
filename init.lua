@@ -246,7 +246,7 @@ require('yaziline'):setup {
 --   behind_color = catppuccin_palette.yellow,
 -- }
 
-require('git'):setup()
+-- require('git'):setup()
 
 require('bookmarks'):setup {
   last_directory = { enable = true, persist = true },
