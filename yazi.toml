@@ -44,6 +44,7 @@ document = [
 image = [
   # { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "unix" },
   # sudo pacman -S qimgv
+  { run = 'nsxiv "$@"', orphan = true, desc = "nsxiv", for = "unix" },
   { run = 'qimgv "$@"', orphan = true, desc = "qimgv", for = "unix" },
   { run = 'krita "$@"', orphan = true, desc = "krita", for = "unix" },
   { run = 'satty --filename "$@"', orphan = true, desc = "satty", for = "unix" },
