@@ -83,6 +83,10 @@ keymap = [
   ], run = "cd ~/Documents", desc = "Go Documents" },
   { on = [
     "g",
+    "m",
+  ], run = "cd ~/Music", desc = "Go ~/Music" },
+  { on = [
+    "g",
     "f",
     "f",
   ], run = "cd ~/.config/fish", desc = "Go fish" },
@@ -123,9 +127,16 @@ keymap = [
   ], run = "cd ~/pyprojects", desc = "Go ~/pyprojects" },
   { on = [
     "g",
-    "f",
+    "p",
+  ], run = "cd ~/Pictures", desc = "Go ~/Pictures" },
+  { on = [
+    "g",
     "P",
   ], run = "cd ~/PJYTV", desc = "Go ~/PJYTV" },
+  { on = [
+    "g",
+    "v",
+  ], run = "cd ~/Videos", desc = "Go ~/Videos" },
   { on = [
     "g",
     "f",
