@@ -131,11 +131,11 @@ keymap = [
   ], run = "cd ~/pyprojects", desc = "Go ~/pyprojects" },
   { on = [
     "g",
-    "p",
+    "P",
   ], run = "cd ~/Pictures", desc = "Go ~/Pictures" },
   { on = [
     "g",
-    "P",
+    "p",
   ], run = "cd ~/PJYTV", desc = "Go ~/PJYTV" },
   { on = [
     "g",
