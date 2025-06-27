@@ -34,11 +34,6 @@ rev = "202e450"
 hash = "9e2f6f7381542d3adb3080b394b431b4"
 
 [[plugin.deps]]
-use = "Tyarel8/video-ffmpeg"
-rev = "1250b85"
-hash = "54a2158dde0bf6ecb377bd71c9cdcdf9"
-
-[[plugin.deps]]
 use = "Ape/mediainfo"
 rev = "df17c4f"
 hash = "74c2b0063f30c6b4e4ede533f9ca03f2"
