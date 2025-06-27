@@ -86,95 +86,38 @@ play = [
 [open]
 rules = [
   # Folder
-  { name = "*/", use = [
-    "edit",
-    "open",
-    "reveal",
-  ] },
+  { name = "*/", use = ["edit", "open", "reveal"] },
   # Text
-  { mime = "text/*", use = [
-    "edit",
-    "reveal",
-  ] },
+  { mime = "text/*", use = ["edit", "reveal"] },
   # Image
-  { mime = "image/*", use = [
-    "image",
-  ] },
+  { mime = "image/*", use = ["image"] },
   # Media
-  { mime = "{audio,video}/*", use = [
-    "play",
-    "reveal",
-  ] },
+  { mime = "{audio,video}/*", use = ["play", "reveal"] },
   # Archive
   # { mime = "application/{,g}zip", use = ["extract", "reveal"] },
   # { mime = "application/{tar,bzip*,7z*,xz,rar}", use = ["extract", "reveal"] },
   # { mime = "application/pdf", use = "document" },
-  { mime = "application/zip", use = [
-    "extract",
-    "reveal",
-  ] },
-  { mime = "application/gzip", use = [
-    "extract",
-    "reveal",
-  ] },
-  { mime = "application/tar", use = [
-    "extract",
-    "reveal",
-  ] },
-  { mime = "application/gtar", use = [
-    "extract",
-    "reveal",
-  ] },
-  { mime = "application/bzip", use = [
-    "extract",
-    "reveal",
-  ] },
-  { mime = "application/bzip2", use = [
-    "extract",
-    "reveal",
-  ] },
-  { mime = "application/7z-compressed", use = [
-    "extract",
-    "reveal",
-  ] },
-  { mime = "application/rar", use = [
-    "extract",
-    "reveal",
-  ] },
-  { mime = "application/xz", use = [
-    "extract",
-    "reveal",
-  ] },
-  { mime = "application/zstd", use = [
-    "extract",
-    "reveal",
-  ] },
+  { mime = "application/zip", use = ["extract", "reveal"] },
+  { mime = "application/gzip", use = ["extract", "reveal"] },
+  { mime = "application/tar", use = ["extract", "reveal"] },
+  { mime = "application/gtar", use = ["extract", "reveal"] },
+  { mime = "application/bzip", use = ["extract", "reveal"] },
+  { mime = "application/bzip2", use = ["extract", "reveal"] },
+  { mime = "application/7z-compressed", use = ["extract", "reveal"] },
+  { mime = "application/rar", use = ["extract", "reveal"] },
+  { mime = "application/xz", use = ["extract", "reveal"] },
+  { mime = "application/zstd", use = ["extract", "reveal"] },
   { mime = "application/epub+zip", use = "document" },
   { mime = "application/x-mobipocket-ebook", use = "document" },
   # JSON
-  { mime = "application/{json,ndjson}", use = [
-    "edit",
-    "reveal",
-  ] },
-  { mime = "*/javascript", use = [
-    "edit",
-    "reveal",
-  ] },
+  { mime = "application/{json,ndjson}", use = ["edit", "reveal"] },
+  { mime = "*/javascript", use = ["edit", "reveal"] },
   #  NOTE: use nvim to open srt file with default
-  { mime = "application/subrip", use = [
-    "edit",
-    "reveal",
-  ] },
+  { mime = "application/subrip", use = ["edit", "reveal"] },
   # Empty file
-  { mime = "inode/empty", use = [
-    "edit",
-    "reveal",
-  ] },
+  { mime = "inode/empty", use = ["edit", "reveal"] },
   # Fallback
-  { name = "*", use = [
-    "open",
-    "reveal",
-  ] },
+  { name = "*", use = ["open", "reveal"] },
 ]
 
 [tasks]
