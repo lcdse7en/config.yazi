@@ -177,3 +177,8 @@ hash = "cc4c39af7098f02c42fec223fc1fc967"
 use = "kmlupreti/ayu-dark"
 rev = "5412a78"
 hash = "60690920e8c0f9f81ff02009de5d156f"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-macchiato"
+rev = "d04a298"
+hash = "e6c5beeb1da3199355734273ee452a7f"

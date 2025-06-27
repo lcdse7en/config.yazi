@@ -10,6 +10,7 @@ ya pkg upgrade
 ya pkg install
 
 # add package in package.toml and download package to plugins `main.`
+ya pkg add yazi-rs/flavors:catppuccin-macchiato
 ya pkg add yazi-rs/plugins:smart-enter
 ya pkg add yazi-rs/plugins:mount
 ya pkg add GianniBYoung/rsync
