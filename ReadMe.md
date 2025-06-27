@@ -24,6 +24,7 @@ ya pkg add DreamMaoMao/easyjump
 ya pkg add KKV9/compress
 ya pkg add KKV9/command
 ya pkg add Sonico98/exifaudio
+ya pkg add kirasok/torrent-preview
 ya pkg add yazi-rs/plugins:hide-preview
 ```
 

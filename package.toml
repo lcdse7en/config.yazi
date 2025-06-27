@@ -69,11 +69,6 @@ rev = "ac57d0a"
 hash = "9f45b6c6a55d9992ad80091ab8112c24"
 
 [[plugin.deps]]
-use = "boydaihungst/torrent-preview"
-rev = "f9e1645"
-hash = "8cee06cf4572d18f03246eaf526b418"
-
-[[plugin.deps]]
 use = "h-hg/yamb"
 rev = "3f7c51f"
 hash = "e11b980e5635f0fbabd80931b1a1347e"
@@ -127,6 +122,11 @@ hash = "fb38b3c546e6594961b335cee4eaa340"
 use = "Sonico98/exifaudio"
 rev = "4506f9d"
 hash = "4761fffb60a12d37096c34a356380cdf"
+
+[[plugin.deps]]
+use = "kirasok/torrent-preview"
+rev = "f465282"
+hash = "b89b46a15035a51d010a254858ba9741"
 
 [[flavor.deps]]
 use = "tkapias/moonfly"
