@@ -1,16 +1,21 @@
-[manager]
+# [manager]
+# ratio = [2, 3, 4]
+# sort_by = "alphabetical"
+# sort_sensitive = false
+# sort_reverse = false
+# sort_dir_first = true
+# sort_translit = false
+# linemode = "none"
+# show_hidden = false
+# show_symlink = false
+# scrolloff = 5
+# mouse_events = ["click", "scroll"]
+# title_format = "Yazi: {cwd}"
+
+[mgr]
 ratio = [2, 3, 4]
-sort_by = "alphabetical"
-sort_sensitive = false
-sort_reverse = false
+sort_by = "natural"
 sort_dir_first = true
-sort_translit = false
-linemode = "none"
-show_hidden = false
-show_symlink = false
-scrolloff = 5
-mouse_events = ["click", "scroll"]
-title_format = "Yazi: {cwd}"
 
 [preview]
 wrap = "no"
@@ -248,3 +253,13 @@ sort_by = "none"
 sort_sensitive = false
 sort_reverse = false
 sort_translit = false
+
+[[plugin.prepend_fetchers]]
+id = "git"
+name = "*"
+run = "git"
+
+[[plugin.prepend_fetchers]]
+id = "git"
+name = "*/"
+run = "git"

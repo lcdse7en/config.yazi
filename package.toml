@@ -1,47 +1,22 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "beb586a"
-hash = "ae9e1d0c6bfd68cdebc98cc684c22b45"
+rev = "7c174cc"
+hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
-use = "qsdrqs/searchjump"
-rev = "489b0db"
-hash = "4715e3eb8925e6b178f27c66407f5feb"
-
-[[plugin.deps]]
-use = "KKV9/compress"
-rev = "60b24af"
-hash = "ee025be766240cc98e671754ac836da3"
+use = "imsi32/yatline-githead"
+rev = "f8f969e"
+hash = "4d441b38138ce6492a4e10fa349fd65"
 
 [[plugin.deps]]
 use = "pirafrank/what-size"
-rev = "b23e3a4"
-hash = "98e5f5af3efd3ba8bc2db0720187cc83"
+rev = "d896656"
+hash = "62251f94eb67648d42cdfcfb8be0fad2"
 
 [[plugin.deps]]
 use = "dedukun/relative-motions"
 rev = "0d9c8cf"
 hash = "561ad872c77b95360c2657c5e8d395ed"
-
-[[plugin.deps]]
-use = "imsi32/yatline"
-rev = "9328205"
-hash = "3e51d1fd8a2e481fcfa8eab1251d1c5f"
-
-[[plugin.deps]]
-use = "imsi32/yatline-githead"
-rev = "a6377a8"
-hash = "4f1a71eff1dd8f245ae2e3985e3e2f91"
-
-[[plugin.deps]]
-use = "KKV9/command"
-rev = "95a29be"
-hash = "65fff40a0060fe4b1c42d49d29f770fd"
-
-[[plugin.deps]]
-use = "yazi-rs/plugins:smart-enter"
-rev = "600614a"
-hash = "c1a2739e9ef2d837030ccb4267be3ed1"
 
 [[plugin.deps]]
 use = "Sonico98/exifaudio"
@@ -57,11 +32,6 @@ hash = "ea24edab4a62c94dbd205adfb6f2c08d"
 use = "yazi-rs/plugins:hide-preview"
 rev = "beb586a"
 hash = "55904f17e1053cfb91dacd9015a99f9d"
-
-[[plugin.deps]]
-use = "yazi-rs/plugins:git"
-rev = "f202fa8"
-hash = "e9cf1bfc03de7fee0f1d4260da0d1dfd"
 
 [[plugin.deps]]
 use = "dedukun/bookmarks"
@@ -94,11 +64,6 @@ rev = "ac57d0a"
 hash = "9f45b6c6a55d9992ad80091ab8112c24"
 
 [[plugin.deps]]
-use = "GianniBYoung/rsync"
-rev = "3f431aa"
-hash = "1854a5a30d23e84bc8df24700f27957b"
-
-[[plugin.deps]]
 use = "yazi-rs/plugins:jump-to-char"
 rev = "beb586a"
 hash = "af11685de39c366ec1137fcbccacdbff"
@@ -127,6 +92,46 @@ hash = "e11b980e5635f0fbabd80931b1a1347e"
 use = "llanosrocas/yaziline"
 rev = "e06c47f"
 hash = "7df84299e89ffefd4686d1e20a295c8a"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "7c174cc"
+hash = "e01006bfb38951ea89031bd918b20dbb"
+
+[[plugin.deps]]
+use = "imsi32/yatline"
+rev = "88bd1c5"
+hash = "981acbe9b758b1af3a8154c932bb936d"
+
+[[plugin.deps]]
+use = "DreamMaoMao/searchjump"
+rev = "fe884f4"
+hash = "b4c00ef6899a9563af8d577d0bb46998"
+
+[[plugin.deps]]
+use = "DreamMaoMao/easyjump"
+rev = "6606fb1"
+hash = "9209d17be3c792eda9ad60b447c4db1e"
+
+[[plugin.deps]]
+use = "KKV9/command"
+rev = "4762ecc"
+hash = "65fff40a0060fe4b1c42d49d29f770fd"
+
+[[plugin.deps]]
+use = "KKV9/compress"
+rev = "9fc8fe0"
+hash = "2ad086899bf368fba211a33d8f68c39d"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "7c174cc"
+hash = "56fdabc96fc1f4d53c96eb884b02a5be"
+
+[[plugin.deps]]
+use = "GianniBYoung/rsync"
+rev = "55631aa"
+hash = "fb38b3c546e6594961b335cee4eaa340"
 
 [[flavor.deps]]
 use = "tkapias/moonfly"
