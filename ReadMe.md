@@ -23,6 +23,8 @@ ya pkg add DreamMaoMao/searchjump
 ya pkg add DreamMaoMao/easyjump
 ya pkg add KKV9/compress
 ya pkg add KKV9/command
+ya pkg add Sonico98/exifaudio
+ya pkg add yazi-rs/plugins:hide-preview
 ```
 
 ## yazi theme
