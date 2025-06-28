@@ -10,8 +10,8 @@ title_format = "Luis position: {cwd}"
 [preview]
 wrap = "no"
 tab_size = 5
-max_width = 2000
-max_height = 1500
+max_width = 1800
+max_height = 1200
 cache_dir = "$HOME/.yazi/Caches"
 image_delay = 30
 image_filter = "triangle"
