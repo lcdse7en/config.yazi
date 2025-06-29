@@ -458,9 +458,12 @@ run = "plugin yamb -- delete_by_fzf"
 desc = "Delete bookmark by fzf"
 
 [[mgr.prepend_keymap]]
+# on = ["b", "r"]
+# run = "plugin yamb -- rename_by_key"
+# desc = "Rename bookmark by key"
 on = ["b", "r"]
-run = "plugin yamb -- rename_by_key"
-desc = "Rename bookmark by key"
+run = ["escape --select", "toggle_all", "rename", "escape --select --search"]
+desc = "Bulk Rename"
 
 [[mgr.prepend_keymap]]
 on = ["b", "R"]
