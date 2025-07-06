@@ -156,10 +156,6 @@ keymap = [
   { on = [",", "S"], run = ["sort size --reverse", "linemode size"], desc = "Sort by size (reverse)" },
   { on = [",", "r"], run = "sort random --reverse=no", desc = "Sort randomly" },
 
-  #Search
-  { on = ["<C-f>"], run = "plugin skim-rg", desc = "Search files by content via ripgrep and skim, open with neovim" },
-  { on = ["<C-t>"], run = "plugin skim", desc = "Jump to file via skim" },
-
   # Goto
   { on = ["g", "h"], run = "cd ~", desc = "Go home" },
   { on = ["g", "c"], run = "cd ~/.config", desc = "Goto ~/.config" },
@@ -534,3 +530,13 @@ desc = "Yazi command prompt"
 on = ["R"]
 run = "plugin rsync --args='user@server.com'"
 desc = "Copy files using rsync to default location"
+
+[[mgr.prepend_keymap]]
+on = ["<C-f>"]
+run = "plugin skim"
+desc = "Search files by content via ripgrep and skim, open with neovim"
+
+[[mgr.prepend_keymap]]
+on = ["<C-t>"]
+run = "plugin skim-rg"
+desc = "Jump to file via skim"
