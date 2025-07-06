@@ -28,6 +28,7 @@ ya pkg add Sonico98/exifaudio
 ya pkg add kirasok/torrent-preview
 ya pkg add yazi-rs/plugins:hide-preview
 # cargo intall skim
+# sudo pacman -S fd bat
 ya pkg add cap153/skim
 ya pkg add cap153/skim-rg
 ```
