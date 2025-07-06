@@ -123,6 +123,16 @@ use = "kirasok/torrent-preview"
 rev = "f465282"
 hash = "b89b46a15035a51d010a254858ba9741"
 
+[[plugin.deps]]
+use = "cap153/skim"
+rev = "e0075e6"
+hash = "2554be904c7dc95544599b846e2aafb4"
+
+[[plugin.deps]]
+use = "cap153/skim-rg"
+rev = "8a1a1ae"
+hash = "5d0f3eab248ebc8f9247dda620a02772"
+
 [[flavor.deps]]
 use = "tkapias/moonfly"
 rev = "395c686"

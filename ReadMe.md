@@ -27,6 +27,8 @@ ya pkg add KKV9/command
 ya pkg add Sonico98/exifaudio
 ya pkg add kirasok/torrent-preview
 ya pkg add yazi-rs/plugins:hide-preview
+ya pkg add cap153/skim
+ya pkg add cap153/skim-rg
 ```
 
 ## yazi theme

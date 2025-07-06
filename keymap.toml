@@ -18,7 +18,7 @@ keymap = [
   { on = "<C-u>", run = "arrow -50%", desc = "Move cursor up half page" },
   { on = "<C-d>", run = "arrow 50%", desc = "Move cursor down half page" },
   { on = "<C-b>", run = "arrow -100%", desc = "Move cursor up one page" },
-  { on = "<C-f>", run = "arrow 100%", desc = "Move cursor down one page" },
+  # { on = "<C-f>", run = "arrow 100%", desc = "Move cursor down one page" },
 
   { on = "<S-PageUp>", run = "arrow -50%", desc = "Move cursor up half page" },
   { on = "<S-PageDown>", run = "arrow 50%", desc = "Move cursor down half page" },
@@ -112,7 +112,7 @@ keymap = [
   { on = ";", run = "shell --interactive", desc = "Run a shell command" },
   { on = ":", run = "shell --block --interactive", desc = "Run a shell command (block until finishes)" },
   { on = [".", "."], run = "hidden toggle", desc = "Toggle the visibility of hidden files" },
-  { on = "<C-f>", run = "search --via=fd", desc = "Search files by name via fd" },
+  # { on = "<C-f>", run = "search --via=fd", desc = "Search files by name via fd" },
   { on = "<C-r>", run = "search --via=rg", desc = "Search files by content via ripgrep" },
   { on = "<C-s>", run = "escape --search", desc = "Cancel the ongoing search" },
   { on = "z", run = "plugin zoxide", desc = "Jump to a directory via zoxide" },
@@ -155,6 +155,10 @@ keymap = [
   { on = [",", "s"], run = ["sort size --reverse=no", "linemode size"], desc = "Sort by size" },
   { on = [",", "S"], run = ["sort size --reverse", "linemode size"], desc = "Sort by size (reverse)" },
   { on = [",", "r"], run = "sort random --reverse=no", desc = "Sort randomly" },
+
+  #Search
+  { on = ["<C-f>"], run = "plugin skim-rg", desc = "Search files by content via ripgrep and skim, open with neovim" },
+  { on = ["<C-t>"], run = "plugin skim", desc = "Jump to file via skim" },
 
   # Goto
   { on = ["g", "h"], run = "cd ~", desc = "Go home" },
@@ -278,7 +282,7 @@ keymap = [
   { on = "<Left>", run = "move -1", desc = "Move back a character" },
   { on = "<Right>", run = "move 1", desc = "Move forward a character" },
   { on = "<C-b>", run = "move -1", desc = "Move back a character" },
-  { on = "<C-f>", run = "move 1", desc = "Move forward a character" },
+  # { on = "<C-f>", run = "move 1", desc = "Move forward a character" },
 
   # Word-wise movement
   { on = "b", run = "backward", desc = "Move back to the start of the current or previous word" },
