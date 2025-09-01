@@ -1,47 +1,47 @@
 local catppuccin_palette = {
-  rosewater = '#f4dbd6',
-  flamingo = '#f0c6c6',
-  pink = '#f5bde6',
-  mauve = '#c6a0f6',
-  red = '#ed8796',
-  maroon = '#ee99a0',
-  peach = '#f5a97f',
-  yellow = '#eed49f',
-  green = '#a6da95',
-  teal = '#8bd5ca',
-  sky = '#91d7e3',
-  sapphire = '#7dc4e4',
-  blue = '#8aadf4',
-  lavender = '#b7bdf8',
-  text = '#cad3f5',
-  subtext1 = '#b8c0e0',
-  subtext0 = '#a5adcb',
-  overlay2 = '#939ab7',
-  overlay1 = '#8087a2',
-  overlay0 = '#6e738d',
-  surface2 = '#5b6078',
-  surface1 = '#494d64',
-  surface0 = '#363a4f',
-  base = '#24273a',
-  mantle = '#1e2030',
-  crust = '#181926',
+  rosewater = "#f4dbd6",
+  flamingo = "#f0c6c6",
+  pink = "#f5bde6",
+  mauve = "#c6a0f6",
+  red = "#ed8796",
+  maroon = "#ee99a0",
+  peach = "#f5a97f",
+  yellow = "#eed49f",
+  green = "#a6da95",
+  teal = "#8bd5ca",
+  sky = "#91d7e3",
+  sapphire = "#7dc4e4",
+  blue = "#8aadf4",
+  lavender = "#b7bdf8",
+  text = "#cad3f5",
+  subtext1 = "#b8c0e0",
+  subtext0 = "#a5adcb",
+  overlay2 = "#939ab7",
+  overlay1 = "#8087a2",
+  overlay0 = "#6e738d",
+  surface2 = "#5b6078",
+  surface1 = "#494d64",
+  surface0 = "#363a4f",
+  base = "#24273a",
+  mantle = "#1e2030",
+  crust = "#181926",
 }
 
 -- Plugins
-require('full-border'):setup {
+require("full-border"):setup({
   type = ui.Border.ROUNDED,
-}
+})
 
-require('zoxide'):setup {
+require("zoxide"):setup({
   update_db = false,
-}
+})
 
-require('session'):setup {
+require("session"):setup({
   sync_yanked = true,
-}
+})
 
 -- NOTE: command `s`
-require('searchjump'):setup {
+require("searchjump"):setup({
   unmatch_fg = catppuccin_palette.overlay0,
   match_str_fg = catppuccin_palette.peach,
   match_str_bg = catppuccin_palette.base,
@@ -53,28 +53,28 @@ require('searchjump'):setup {
   show_search_in_statusbar = false,
   auto_exit_when_unmatch = false,
   enable_capital_lable = false,
-  search_patterns = { 'hell[dk]d', '%d+.1080p', '第%d+集', '第%d+话', '%.E%d+', 'S%d+E%d+' },
-}
+  search_patterns = { "hell[dk]d", "%d+.1080p", "第%d+集", "第%d+话", "%.E%d+", "S%d+E%d+" },
+})
 
-require('restore'):setup {
-  position = { 'center', w = 70, h = 40 },
+require("restore"):setup({
+  position = { "center", w = 70, h = 40 },
   show_confirm = true,
   theme = {
-    title = 'blue',
-    header = 'green',
-    header_warning = 'yellow',
-    list_item = { odd = 'blue', even = 'blue' },
+    title = "blue",
+    header = "green",
+    header_warning = "yellow",
+    list_item = { odd = "blue", even = "blue" },
   },
-}
+})
 
-require('mime-ext'):setup { -- Expand the existing filename database (lowercase), for example:
+require("mime-ext"):setup({ -- Expand the existing filename database (lowercase), for example:
   fallback_file1 = true,
-}
+})
 
-require('projects'):setup {
+require("projects"):setup({
   save = {
-    method = 'yazi', -- yazi | lua
-    lua_save_path = '~/.config/yazi/state/projects.json', -- windows: "%APPDATA%/yazi/state/projects.json", unix: "~/.config/yazi/state/projects.json"
+    method = "yazi", -- yazi | lua
+    lua_save_path = "~/.config/yazi/state/projects.json", -- windows: "%APPDATA%/yazi/state/projects.json", unix: "~/.config/yazi/state/projects.json"
   },
   last = {
     update_after_save = true,
@@ -86,30 +86,30 @@ require('projects'):setup {
   },
   notify = {
     enable = true,
-    title = 'Projects',
+    title = "Projects",
     timeout = 3,
-    level = 'info',
+    level = "info",
   },
-}
+})
 
-require('yamb'):setup {
+require("yamb"):setup({
   -- Optional, the path ending with path seperator represents folder.
   bookmarks = bookmarks,
   -- Optional, recieve notification everytime you jump.
   jump_notify = false,
   -- Optional, the cli of fzf.
-  cli = 'fzf',
+  cli = "fzf",
   -- Optional, a string used for randomly generating keys, where the preceding characters have higher priority.
-  keys = 'abcdefghijklmnopqrstuvwxyz',
+  keys = "abcdefghijklmnopqrstuvwxyz",
   -- Optional, the path of bookmarks
-  path = (ya.target_family() == 'windows' and os.getenv 'APPDATA' .. '\\yazi\\config\\bookmark')
-    or (os.getenv 'HOME' .. '/.config/yazi/bookmark'),
-}
+  path = (ya.target_family() == "windows" and os.getenv("APPDATA") .. "\\yazi\\config\\bookmark")
+    or (os.getenv("HOME") .. "/.config/yazi/bookmark"),
+})
 
-require('yatline'):setup {
-  section_separator = { open = '', close = '' },
-  inverse_separator = { open = '', close = '' },
-  part_separator = { open = '', close = '' },
+require("yatline"):setup({
+  section_separator = { open = "", close = "" },
+  inverse_separator = { open = "", close = "" },
+  part_separator = { open = "", close = "" },
 
   style_a = {
     fg = catppuccin_palette.mantle,
@@ -128,15 +128,15 @@ require('yatline'):setup {
   permissions_x_fg = catppuccin_palette.sky,
   permissions_s_fg = catppuccin_palette.lavender,
 
-  selected = { icon = '󰻭', fg = catppuccin_palette.yellow },
-  copied = { icon = '', fg = catppuccin_palette.green },
-  cut = { icon = '', fg = catppuccin_palette.red },
+  selected = { icon = "󰻭", fg = catppuccin_palette.yellow },
+  copied = { icon = "", fg = catppuccin_palette.green },
+  cut = { icon = "", fg = catppuccin_palette.red },
 
-  total = { icon = '', fg = catppuccin_palette.yellow },
-  succ = { icon = '', fg = catppuccin_palette.green },
-  fail = { icon = '', fg = catppuccin_palette.red },
-  found = { icon = '', fg = catppuccin_palette.blue },
-  processed = { icon = '', fg = catppuccin_palette.green },
+  total = { icon = "", fg = catppuccin_palette.yellow },
+  succ = { icon = "", fg = catppuccin_palette.green },
+  fail = { icon = "", fg = catppuccin_palette.red },
+  found = { icon = "", fg = catppuccin_palette.blue },
+  processed = { icon = "", fg = catppuccin_palette.green },
 
   tab_width = 20,
   tab_use_inverse = true,
@@ -149,22 +149,22 @@ require('yatline'):setup {
   header_line = {
     left = {
       section_a = {
-        { type = 'line', custom = false, name = 'tabs', params = { 'left' } },
+        { type = "line", custom = false, name = "tabs", params = { "left" } },
       },
       section_b = {
-        { type = 'coloreds', custom = false, name = 'githead' },
+        { type = "coloreds", custom = false, name = "githead" },
       },
       section_c = {},
     },
     right = {
       section_a = {
-        { type = 'string', custom = false, name = 'tab_path' },
+        { type = "string", custom = false, name = "tab_path" },
       },
       section_b = {
-        { type = 'coloreds', custom = false, name = 'task_workload' },
+        { type = "coloreds", custom = false, name = "task_workload" },
       },
       section_c = {
-        { type = 'coloreds', custom = false, name = 'task_states' },
+        { type = "coloreds", custom = false, name = "task_states" },
       },
     },
   },
@@ -172,58 +172,58 @@ require('yatline'):setup {
   status_line = {
     left = {
       section_a = {
-        { type = 'string', custom = false, name = 'tab_mode' },
+        { type = "string", custom = false, name = "tab_mode" },
       },
       section_b = {
-        { type = 'string', custom = false, name = 'hovered_size' },
+        { type = "string", custom = false, name = "hovered_size" },
       },
       section_c = {
-        { type = 'string', custom = false, name = 'hovered_name' },
-        { type = 'coloreds', custom = false, name = 'count' },
+        { type = "string", custom = false, name = "hovered_name" },
+        { type = "coloreds", custom = false, name = "count" },
       },
     },
     right = {
       section_a = {
-        { type = 'string', custom = false, name = 'cursor_position' },
+        { type = "string", custom = false, name = "cursor_position" },
       },
       section_b = {
-        { type = 'string', custom = false, name = 'cursor_percentage' },
+        { type = "string", custom = false, name = "cursor_percentage" },
       },
       section_c = {
-        { type = 'string', custom = false, name = 'hovered_file_extension', params = { true } },
-        { type = 'coloreds', custom = false, name = 'permissions' },
+        { type = "string", custom = false, name = "hovered_file_extension", params = { true } },
+        { type = "coloreds", custom = false, name = "permissions" },
       },
     },
   },
-}
+})
 
-require('yatline-githead'):setup {
+require("yatline-githead"):setup({
   show_branch = true,
-  branch_prefix = '',
-  branch_symbol = '',
-  branch_borders = '',
+  branch_prefix = "",
+  branch_symbol = "",
+  branch_borders = "",
 
-  commit_symbol = ' ',
+  commit_symbol = " ",
 
   show_behind_ahead = true,
-  behind_symbol = ' ',
-  ahead_symbol = ' ',
+  behind_symbol = " ",
+  ahead_symbol = " ",
 
   show_stashes = true,
-  stashes_symbol = ' ',
+  stashes_symbol = " ",
 
   show_state = true,
   show_state_prefix = true,
-  state_symbol = '󱅉',
+  state_symbol = "󱅉",
 
   show_staged = true,
-  staged_symbol = ' ',
+  staged_symbol = " ",
 
   show_unstaged = true,
-  unstaged_symbol = ' ',
+  unstaged_symbol = " ",
 
   show_untracked = true,
-  untracked_symbol = ' ',
+  untracked_symbol = " ",
 
   prefix_color = catppuccin_palette.pink,
   branch_color = catppuccin_palette.pink,
@@ -235,25 +235,52 @@ require('yatline-githead'):setup {
   untracked_color = catppuccin_palette.pink,
   ahead_color = catppuccin_palette.green,
   behind_color = catppuccin_palette.yellow,
-}
+})
 
-require('git'):setup()
+require("git"):setup()
 
-require('bookmarks'):setup {
+require("bookmarks"):setup({
   last_directory = { enable = true, persist = true },
-  persist = 'all',
-  desc_format = 'full',
-  file_pick_mode = 'hover',
+  persist = "all",
+  desc_format = "full",
+  file_pick_mode = "hover",
   notify = {
     enable = true,
     timeout = 2,
     message = {
       new = "New bookmark 'm' -> '<folder>'",
       delete = "Deleted bookmark in '<key>'",
-      delete_all = 'Deleted all bookmarks',
+      delete_all = "Deleted all bookmarks",
     },
   },
-}
+})
+require("starship"):setup()
+require("restore"):setup({
+  position = { "center", w = 70, h = 40 },
+  show_confirm = true,
+  theme = {
+    title = "blue",
+    header = "green",
+    header_warning = "yellow",
+    list_item = { odd = "blue", even = "blue" },
+  },
+})
+require("gvfs"):setup({
+  -- (Optional) Allowed keys to select device.
+  which_keys = "1234567890qwertyuiopasdfghjklzxcvbnm-=[]\\;',./!@#$%^&*()_+{}|:\"<>?",
+  -- (Optional) Save file.
+  -- Default: ~/.config/yazi/gvfs.private
+  save_path = os.getenv("HOME") .. "/.config/yazi/gvfs.private",
+  input_position = { "center", y = 0, w = 60 },
+  -- (Optional) Select where to save passwords. Default: nil
+  -- Available options: "keyring", "pass", or nil
+  password_vault = nil,
+  -- (Optional) Only need if you set password_vault = "pass"
+  -- Read the guide at SECURE_SAVED_PASSWORD.md to get your key_grip
+  key_grip = "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+  -- (Optional) save password automatically after mounting. Default: false
+  save_password_autoconfirm = false,
+})
 
 -- require('fg'):setup {
 --   default_action = 'jump',

@@ -507,10 +507,10 @@ on = ["S"]
 run = 'shell "$SHELL" --block --confirm'
 desc = "Open shell here"
 
-[[mgr.prepend_keymap]]
-on = ["A"]
-run = "create --dir"
-desc = "Create a directory"
+# [[mgr.prepend_keymap]]
+# on = ["A"]
+# run = "create --dir"
+# desc = "Create a directory"
 
 [[mgr.prepend_keymap]]
 on = "<C-k>"
@@ -540,3 +540,65 @@ desc = "Search files by content via ripgrep and skim, open with neovim"
 on = ["<C-t>"]
 run = "plugin skim-rg"
 desc = "Jump to file via skim"
+
+# Convert
+[[mgr.prepend_keymap]]
+on = ["c", "p"]
+run = "plugin convert -- --extension='png'"
+desc = "Convert selected files to PNG"
+
+[[mgr.prepend_keymap]]
+on = ["c", "j"]
+run = "plugin convert -- --extension='jpg'"
+desc = "Convert selected files to JPG"
+
+[[mgr.prepend_keymap]]
+on = ["c", "w"]
+run = "plugin convert -- --extension='webp'"
+desc = "Convert selected files to WebP"
+
+# GVFS -- sudo pacman -S gvfs glib2 gvfs-mtp gvfs-google
+[[mgr.prepend_keymap]]
+on = ["A", "M"]
+run = "plugin gvfs -- select-then-mount --jump"
+desc = "Select device to mount and jump to its mount"
+
+[[mgr.prepend_keymap]]
+on = ["A", "r"]
+run = "plugin gvfs -- remount-current-cwd-device"
+desc = "Remount device under cwd"
+
+[[mgr.prepend_keymap]]
+on = ["A", "u"]
+run = "plugin gvfs -- select-then-unmount"
+desc = "Select device then unmount"
+
+[[mgr.prepend_keymap]]
+on = ["A", "U"]
+run = "plugin gvfs -- select-then-unmount --eject --force"
+desc = "Select device then force to eject/unmount"
+
+[[mgr.prepend_keymap]]
+on = ["A", "a"]
+run = "plugin gvfs -- add-mount"
+desc = "Add a GVFS mount URI"
+
+[[mgr.prepend_keymap]]
+on = ["A", "e"]
+run = "plugin gvfs -- edit-mount"
+desc = "Edit a GVFS mount URI"
+
+[[mgr.prepend_keymap]]
+on = ["A", "R"]
+run = "plugin gvfs -- remove-mount"
+desc = "Remove a GVFS mount URI"
+
+[[mgr.prepend_keymap]]
+on = ["A", "m"]
+run = "plugin gvfs -- jump-to-device"
+desc = "Select device then jump to its mount point"
+
+[[mgr.prepend_keymap]]
+on = ["A", "`"]
+run = "plugin gvfs -- jump-back-prev-cwd"
+desc = "Jump back to the position before jumped to device"

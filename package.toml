@@ -133,6 +133,21 @@ use = "cap153/skim-rg"
 rev = "8a1a1ae"
 hash = "5d0f3eab248ebc8f9247dda620a02772"
 
+[[plugin.deps]]
+use = "Rolv-Apneseth/starship"
+rev = "a63550b"
+hash = "c2021386289a0cbb3e152a052f67c177"
+
+[[plugin.deps]]
+use = "boydaihungst/gvfs"
+rev = "b58c305"
+hash = "92dc8bdc3d9cbb36e03111b4cad231fc"
+
+[[plugin.deps]]
+use = "daxisunder/convert"
+rev = "2333bdb"
+hash = "6f61a6c119bd550c3c56f292b5e20ec7"
+
 [[flavor.deps]]
 use = "tkapias/moonfly"
 rev = "395c686"
