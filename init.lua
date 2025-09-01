@@ -56,17 +56,6 @@ require("searchjump"):setup({
   search_patterns = { "hell[dk]d", "%d+.1080p", "第%d+集", "第%d+话", "%.E%d+", "S%d+E%d+" },
 })
 
-require("restore"):setup({
-  position = { "center", w = 70, h = 40 },
-  show_confirm = true,
-  theme = {
-    title = "blue",
-    header = "green",
-    header_warning = "yellow",
-    list_item = { odd = "blue", even = "blue" },
-  },
-})
-
 require("mime-ext"):setup({ -- Expand the existing filename database (lowercase), for example:
   fallback_file1 = true,
 })
@@ -265,6 +254,7 @@ require("restore"):setup({
     list_item = { odd = "blue", even = "blue" },
   },
 })
+-- require("no-header"):setup()
 require("gvfs"):setup({
   -- (Optional) Allowed keys to select device.
   which_keys = "1234567890qwertyuiopasdfghjklzxcvbnm-=[]\\;',./!@#$%^&*()_+{}|:\"<>?",

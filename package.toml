@@ -148,6 +148,11 @@ use = "daxisunder/convert"
 rev = "2333bdb"
 hash = "6f61a6c119bd550c3c56f292b5e20ec7"
 
+[[plugin.deps]]
+use = "aintnodev/no-header"
+rev = "16e8025"
+hash = "65cce81f8e97454c78846ff792b52dfc"
+
 [[flavor.deps]]
 use = "tkapias/moonfly"
 rev = "395c686"
